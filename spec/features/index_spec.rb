@@ -9,7 +9,7 @@ feature 'Index page' do
   scenario 'has a log-out button if there is a session' do
     create_user_from_database
     visit('/peeps')
-    click_on "Log-In"
+    click_on "[Log-In]"
 
     expect(current_path).to eq "/users/log_in"
 
