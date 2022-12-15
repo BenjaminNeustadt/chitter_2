@@ -1,0 +1,20 @@
+<%if @user%>
+  <div class="form">
+    <button class="submit-button" onclick="location.href='/peeps/new'"> Post Peep</button>
+  </div>
+  <div class="flash-welcome" align="center">
+    <%= flash[:notice] %>
+  </div>
+<%end %>
+<div class="peeps">
+  <ul style="list-style: none;">
+    <% @peeps.each do |peep| %>
+      <ul class="peep">
+        <li class="peep-content"><%= peep.content %></li>
+        <li class="peep-name"><%= peep.get_author(peep.user_id) %></li>
+        <li style="font-size: 70%; font-weight:bolder" ><%= peep.time_stamp %></li><br>
+      </ul>
+    <% end %>
+  </ul>
+</div>
+

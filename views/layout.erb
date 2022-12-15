@@ -1,0 +1,52 @@
+<html>
+
+  <head>
+    <title>Chitter</title>
+    <link href="<%= url('/styles.css') %>" rel="stylesheet" type="text/css" />
+  </head>
+
+<div>
+
+  <body>
+
+    <header>
+
+      <div class="navbar">
+
+        <a class ="nav" href="/peeps">
+          <div class="heading">
+            <h1>[Chitter]</h1>
+          </div>
+        </a>
+
+        <%if @user%>
+          <a class ="nav" href="/users/log_out">
+            <div class="heading">
+              <h1>[Log-Out]</h1>
+            </div>
+          </a>
+
+        <%else%>
+
+        <a class ="nav" href="/users/sign_up">
+          <div class="heading">
+            <h1>[Sign-Up]</h1>
+          </div>
+        </a>
+
+          <a class ="nav" href="/users/log_in">
+            <div class="heading">
+              <h1>[Log-In]</h1>
+            </div>
+          </a>
+        <%end%>
+      </div>
+
+    </header>
+
+    <%=yield%>
+
+  </body>
+
+</html>
+
