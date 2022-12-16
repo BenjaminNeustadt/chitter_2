@@ -1,0 +1,139 @@
+/* Remove underlines globally */
+* {
+  text-decoration: none;
+}
+
+/*
+  /* Navigation bar formatting
+*/
+
+.navbar {
+  background-color: white;
+  display: flex;
+  /* Align items so everything is centered */
+  align-items: center;
+  padding: 0 24px;
+  justify-content: left;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 2px 2px 3px 3px silver;
+  margin-bottom: 20px;
+}
+
+.navbar .nav {
+  background-color: white;
+  /* Align items so everything is centered */
+  padding: 0 20px;
+}
+
+.navbar .nav .heading {
+  color: black;
+  text-shadow: 2px 2px silver;
+}
+
+.navbar .nav .heading:hover {
+  color: blue;
+  text-shadow: 2px 2px black;
+}
+
+/*
+  /* Peeps formatting
+*/
+
+.peeps {
+  padding-top: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  margin: 20px;
+  box-shadow: 10px 5px 10px grey;
+
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+
+.peep {
+  background-color: silver;
+  box-shadow: 10px 5px 10px grey;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  justify-content: center;
+  list-style: none;
+  width: 700px;
+}
+
+.peep-name {
+  color:white;
+  font-weight: bold;
+  font-size:30;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.peep-content{
+  color: black;
+  font-size:20;
+}
+
+.peep#name {
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.flash-welcome {
+  font-size: 40px;
+  color: white;
+  background-color: silver;
+  text-shadow: 2px 2px black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-top:20;
+}
+
+/*
+  /* Forms
+*/
+
+.form {
+  padding: 0 45px;
+  justify-content: left;
+}
+
+.submit-button {
+  color: black;
+  background-color: silver;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px grey;
+  font-size: 16px;
+  font-weight:bold;
+  padding:10px, 20px;
+}
+
+.submit-button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.input-box {
+  border: 1px solid grey;
+  border-radius: 1px;
+  height: 22.5px;
+}
+
+.input-box:focus {
+  outline: none !important;
+  border-color: blue;
+  box-shadow: 0 0 5px black;
+}
+
+.input-box-peep {
+  border: 1px solid grey;
+  border-radius: 1px;
+  height: 22.5px;
+  width: 300;
+}
+
