@@ -1,5 +1,5 @@
 require 'sinatra/base'
-
+require 'puma'
 require 'sinatra/flash'
 require_relative './lib/peep'
 require_relative './lib/user'
@@ -7,8 +7,9 @@ require_relative './lib/database_connection_setup'
 
 class ChitterApp < Sinatra::Base
 
-  enable :sessions
   register Sinatra::Flash
+  enable :sessions
+
   set :bind, '0.0.0.0'
   set :port, 8080
 
